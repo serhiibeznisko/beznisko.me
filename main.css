@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+header {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: row;
+}
+
+.line {
+    width: 80px;
+    height: 7px;
+    border-bottom: #ABABAB solid 1px;
+}
+
+.logo {
+    color: #4c4c4c;
+    margin-left: 20px;
+}
+
+.accent {
+    position: absolute;
+    border-bottom: #000 solid 6px;
+    width: 45px;
+    top: 44%;
+    left: 38%;
+    -ms-transform: rotate(25deg); /* IE 9 */
+    -webkit-transform: rotate(25deg); /* Safari prior 9.0 */
+    transform: rotate(-25deg);
+}
+
+#main p {
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 48%;
+    width: 100%;
+}
+
+.main--overlay {
+    font-size: 30vw;
+    margin-left: -250px;
+    color: #fff;
+    text-shadow: 0 0 2px #ababab;
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    text-align: center;
+    position: absolute;
+    top: 46%;
+    width: 100%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact {
+    float: right;
+    margin-bottom: 54px;
+    margin-right: 120px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.socials a {
+    color: #ABABAB;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.socials a:hover {
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 470px) {
+    #main p {
+        font-size: 1em;
+    }
+    .contact {
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
