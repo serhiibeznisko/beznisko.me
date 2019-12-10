@@ -1,35 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <title>beznisko.me</title>
-</head>
-<body>
-<header>
-    <div class="line"></div>
-    <div class="logo">2019</div>
-</header>
-<section id="main">
-    <div class="main--overlay">beznisko</div>
-    <div class="accent"></div>
-    <p>beznisko</p>
-</section>
-<footer id="footer">
-    <div class="contact">
-        <ul class="socials">
-            <li><a href="https://www.facebook.com/beznisko.ss" target="_blank">fb</a></li>
-            <li><a href="https://twitter.com/serhiibeznisko" target="_blank">tw</a></li>
-            <li><a href="https://www.linkedin.com/in/serhiibeznisko/" target="_blank">in</a></li>
-            <li><a href="https://www.instagram.com/serhiibeznisko/" target="_blank">st</a></li>
-            <li><a href="https://github.com/serhiibeznisko" target="_blank">gt</a></li>
-            <li><a href="mailto:hello@beznisko.me">em</a></li>
-        </ul>
-    </div>
-</footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <title>beznisko.me</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background: #000;
+                color: #fff;
+                font-size: 100%;
+                font-family: sans-serif;
+                line-height: 1;
+            }
+            h1 {
+                margin-bottom: 5px;
+                font: inherit;
+            }
+            ul {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+            .container {
+                position: absolute;
+                width: 150px;
+                height: 200px;
+                z-index: 15;
+                top: 50%;
+                left: 50%;
+                margin: -100px 0 0 -75px;
+            }
+            .container > * {
+                padding: 5px;
+            }
+            .mail {
+                display: block;
+                background: #fff;
+                color: #000;
+            }
+            .socials {
+                margin-top: 5px;
+                display: flex;
+                flex-direction: row;
+            }
+            .socials li {
+                margin-right: 22px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--  Do not look here. -->
+        <div class="container">
+            <h1>Serhii Beznisko</h1>
+            <a class="mail" href="mailto:hello@beznisko.me">hello@beznisko.me</a>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/beznisko.ss" target="_blank">fb</a></li>
+                <li><a href="https://twitter.com/serhiibeznisko" target="_blank">tw</a></li>
+                <li><a href="https://www.instagram.com/serhiibeznisko/" target="_blank">inst</a></li>
+                <li><a href="https://github.com/serhiibeznisko" target="_blank">gh</a></li>
+            </ul>
+        </div>
+    </body>
 </html>
+
+
