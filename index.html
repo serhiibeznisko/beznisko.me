@@ -6,17 +6,17 @@
           content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <title>beznisko.me</title>
     <style>
+        :root {
+            --main-color: #fff;
+        }
+
         body {
-            background: #fff;
+            background: var(--main-color);
             color: #000;
             font-family: sans-serif;
             margin: 0;
             padding: 0;
             transition: all 0.4s ease;
-        }
-
-        body.lit-up {
-            background: #F5CAA6;
         }
 
         .name {
@@ -50,12 +50,13 @@
             width: fit-content;
         }
 
-        .mail {
+        .address {
             display: block;
             background: #000;
-            color: #fff;
+            color: var(--main-color);
             padding: 5px;
             margin: 8px 0;
+            transition: all 0.4s ease;
         }
 
         .socials {
@@ -120,7 +121,7 @@
 <div id="main">
     <div class="content">
         <h1 class="name">Serhii Beznisko</h1>
-        <p class="mail">beznisko.ss at gmail.com</p>
+        <p class="address">beznisko.ss at gmail.com</p>
         <ul class="socials">
             <li><a href="https://twitter.com/serhiibeznisko">tw</a></li>
             <li><a href="https://www.instagram.com/serhiibeznisko/">inst</a></li>
@@ -148,7 +149,7 @@
         for (let i = 0; i < lamps.length; i++) {
             lamps.item(i).className += " lit-up";
         }
-        document.body.className = "lit-up";
+        document.body.style.setProperty('--main-color',"#f5caa6");
     }
 </script>
 </body>
